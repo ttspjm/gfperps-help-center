@@ -56,7 +56,7 @@ function link(rel, url, done) {
 function show(root) {
   link("stylesheet", root + "assets/help.css", reveal);
   link("stylesheet", root + "assets/brand.css");
-  link("icon", root + "assets/" + "favicon.png");
+  link("icon", root + "assets/" + "perps-mark.png");
   ready(function () {
     document.body.setAttribute("data-root", root);
     [].forEach.call(document.querySelectorAll("a[data-to]"), function (a) { a.href = root + a.getAttribute("data-to"); });
