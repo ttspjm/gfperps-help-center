@@ -117,5 +117,19 @@
     "anchor": "a-18451763",
     "url": "trading-rules.html#a-18451763",
     "articleUrl": "en/articles/18451763-minimum-holding-time"
+  },
+  "18451900": {
+    "page": "get-started",
+    "tab": "challenges",
+    "anchor": "a-18451900",
+    "url": "get-started.html#a-18451900",
+    "articleUrl": "en/articles/18451900-can-i-get-a-refund-or-reset-my-account"
+  },
+  "18451901": {
+    "page": "payouts",
+    "tab": "how",
+    "anchor": "a-18451901",
+    "url": "payouts.html#a-18451901",
+    "articleUrl": "en/articles/18451901-identity-verification-kyc"
   }
 }
