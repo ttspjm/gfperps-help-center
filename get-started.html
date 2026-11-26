@@ -79,7 +79,7 @@
 <p class="updated after">Updated 25 November 2026</p>
 </section>
 <section class="panel" data-panel="challenges">
-<nav class="in-tab" aria-label="In this tab"><div class="eyebrow">In this tab</div><ul><li><a href="#a-18450640">Legacy challenge rules</a></li><li><a href="#a-18450641">Blitz challenge rules</a></li><li><a href="#a-18450642">Goat challenge rules</a></li></ul></nav>
+<nav class="in-tab" aria-label="In this tab"><div class="eyebrow">In this tab</div><ul><li><a href="#a-18450640">Legacy challenge rules</a></li><li><a href="#a-18450641">Blitz challenge rules</a></li><li><a href="#a-18450642">Goat challenge rules</a></li><li><a href="#a-18623339">Is the daily drawdown based on my balance or my equity?</a></li><li><a href="#a-18623340">Does my maximum drawdown trail or lock at my initial balance after my first payout?</a></li></ul></nav>
 <div class="sec" id="a-18450640"><h2>Legacy challenge rules</h2></div>
 <p>Legacy has the widest drawdown of the three challenges. It's built to be the easiest to pass.</p>
 <div class="table-wrap"><table><thead><tr><th><b>Rule</b></th><th><b>Legacy</b></th></tr></thead><tbody><tr><td>Type</td><td>1-Step</td></tr><tr><td>Account sizes</td><td>$5K, $10K, $25K, $50K, $100K</td></tr><tr><td>Profit target</td><td>10%, counts open positions</td></tr><tr><td>Daily drawdown</td><td>3%</td></tr><tr><td>Maximum drawdown</td><td>6% static</td></tr><tr><td>Time limit</td><td>None</td></tr><tr><td>Minimum trading days</td><td>None</td></tr><tr><td>Consistency rule</td><td>None</td></tr><tr><td>Profit split</td><td>80%, or 90% as an option</td></tr><tr><td>Payouts</td><td>Every 24 hours, or every 3 days with Daily payouts off</td></tr><tr><td>Maximum profit per payout</td><td>5% of your initial balance</td></tr><tr><td>News profit cap</td><td>1% of your initial balance per news release</td></tr><tr><td>Minimum holding time</td><td>30 seconds</td></tr><tr><td>Payout fee</td><td>3%</td></tr><tr><td>Leverage</td><td>Boosted by default, standard with Boosted leverage off</td></tr></tbody></table></div>
@@ -111,6 +111,27 @@
 <p>Example: on a $10K Goat with the 3% drawdown, your floor starts at $9,700. You end day one at $10,150, so the floor moves up to $9,850. You end day two at $10,050, so it stays at $9,850.</p>
 <p>Your first payout request also locks the floor at your initial balance. See Maximum drawdown.</p>
 <p class="updated after">Updated 23 November 2026</p>
+<div class="sec" id="a-18623339"><h2>Is the daily drawdown based on my balance or my equity?</h2></div>
+<p>Your balance. Your daily drawdown limit is set once a day from your balance at the 5 PM EST reset. Open trades don't count when the limit is set, so profit on them never raises it.</p>
+<p>The limit is 3% on Legacy and Blitz. On Goat it's 2%, or 3% if you chose that upgrade. It stays where it is until the next reset.</p>
+<h3 id="a-18623339-h_9b78eb9933">Example</h3>
+<p>On a $10K Legacy, your balance at the reset is $10,000 and you have a trade open $400 in profit. Your limit for the day is 3% below the $10,000 balance, which is $9,700. Your equity is $10,400, so that trade can give back all of its profit and you still have $300 of room.</p>
+<h3 id="a-18623339-h_fa2b0008ee">Your maximum drawdown is separate</h3>
+<p>You also have to stay above your maximum drawdown floor. See Does my maximum drawdown trail or lock at my initial balance after my first payout?</p>
+<p class="updated after">Updated 26 November 2026</p>
+<div class="sec" id="a-18623340"><h2>Does my maximum drawdown trail or lock at my initial balance after my first payout?</h2></div>
+<p>It depends on your challenge.</p>
+<div class="table-wrap wide"><table><thead><tr><th><b>Challenge</b></th><th><b>Does it trail?</b></th><th><b>Locks at initial balance after first payout?</b></th><th><b>Floor on a $10K account</b></th></tr></thead><tbody><tr><td>Legacy</td><td>No, static</td><td>No</td><td>$9,400, always</td></tr><tr><td>Blitz</td><td>No, static</td><td>No</td><td>$9,700, always</td></tr><tr><td>Goat</td><td>Yes, end-of-day trailing</td><td>Yes</td><td>Starts at $9,700, or $9,500 with the 5% upgrade. Stops at $10,000</td></tr></tbody></table></div>
+<h3 id="a-18623340-h_2c7bc32ee5">Legacy and Blitz: your floor never moves</h3>
+<p>Your floor is set the day the account starts and stays there. It doesn't follow your profit, and a payout doesn't lock it at your initial balance.</p>
+<p>Example: on a $10K Legacy your floor is $9,400. Grow the account to $11,000 and take payouts, and it's still $9,400.</p>
+<h3 id="a-18623340-h_d9f815a1d8">Goat: your floor trails, then locks</h3>
+<p>Goat's floor starts 3% below your initial balance, or 5% if you chose that upgrade. At the end of each trading day, 5 PM EST, it moves up with any new end-of-day high and stays the same distance below it. It never moves down.</p>
+<p>It stops trailing and locks at your initial balance as soon as one of these happens:</p>
+<ul><li>It reaches your initial balance</li><li>You request your first payout</li></ul>
+<p>Example on a $10K Goat with the 3% drawdown: the floor starts at $9,700. You end a day at $10,150, so it moves to $9,850. When you request your first payout, it locks at $10,000. From then on, if your equity falls to $10,000, the account fails.</p>
+<p>See Maximum drawdown for the full rules.</p>
+<p class="updated after">Updated 26 November 2026</p>
 </section>
 <p class="to-top"><a href="#top">Back to top</a></p>
 </main>
